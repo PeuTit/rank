@@ -1,6 +1,8 @@
-# Programming Language Roulette
+# Programming Language Roulette -> TypeScript
 
-I've been task to build something using Typescript. My goal is to produce a small web api whose purpose is to rank GitHub user by their contribution.
+Project name: Rank
+
+I've been task to build something using Typescript. My goal is to produce a small cli whose purpose is to rank GitHub user.
 I've choose to go with [Deno](https://deno.com/) (/ˈdiːnoʊ/, pronounced dee-no).
 It's a JavaScript, TypeScript, and WebAssembly runtime based on Rust.
 
@@ -19,6 +21,5 @@ deno task dev
 ## Usage
 
 ```
-/username/:yourusername -> Fetch the user data from github api and register it
-/rank -> rank the currently registered user
+rank username1 username2 -> Fetch the users data from github api, and rank them
 ```
