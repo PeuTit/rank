@@ -51,7 +51,7 @@ function rankUsers(user0: GithubUser, user1: GithubUser): void {
   // public repos
   if (user0.public_repos > user1.public_repos) {
     isMorePopularThan(user0.login, user1.login, "public repos");
-  } else if (user1.public_repos > user0.public_repos) {
+  } else if (user0.public_repos < user1.public_repos) {
     isMorePopularThan(user1.login, user0.login, "public repos");
   } else {
     console.log("Same number of public repos");
@@ -59,17 +59,17 @@ function rankUsers(user0: GithubUser, user1: GithubUser): void {
   // public gists
   if (user0.public_repos > user1.public_repos) {
     isMorePopularThan(user0.login, user1.login, "public gists");
-  } else if (user1.public_repos > user0.public_repos) {
+  } else if (user0.public_repos < user1.public_repos) {
     isMorePopularThan(user1.login, user0.login, "public gists");
   } else {
     console.log("Same number of public gists");
   }
   // creation date
-  if (user0.created_at > user1.created_at) {
+  if (user0.created_at < user1.created_at) {
     console.log(
       `${user0.login} account is older than ${user1.login} by creation date`,
     );
-  } else if (user1.created_at > user0.created_at) {
+  } else if (user0.created_at > user1.created_at) {
     console.log(
       `${user1.login} account is older than ${user0.login} by creation date`,
     );
