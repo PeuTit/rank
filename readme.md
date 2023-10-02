@@ -8,18 +8,16 @@ It's a JavaScript, TypeScript, and WebAssembly runtime based on Rust.
 
 ## Setup
 
-To install Deno, and run this programme:
+To install Deno:
 
 ```sh
 brew install deno
 ```
-And:
-```
-deno task dev
-```
 
 ## Usage
 
+To run the program:
+
 ```
-rank username1 username2 -> Fetch the users data from github api, and rank them
+deno task dev username1 username2 -> Fetch the users data from github api, and rank them
 ```
